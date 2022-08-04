@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+  <!-- Nhập N -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">NHẬP N</h1>
+    <br>
+    <input type="number" class="form-control" name="" id="soN" aria-describedby="helpId" placeholder="Nhập số N">
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="nhapN()">Thêm
+      Số</button>
+    <div class=" bg-success" id="xuatN"></div>
+  </div>
+  <br>
+  <!-- Bài 1: Tổng số dương -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 1: Tổng số dương</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="tongDuong()">Tính Tổng</button>
+    <div class=" bg-success" id="tongDuong"></div>
+  </div>
+  <br>
+  <!-- Bài 2: Đếm số dương -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 2: Đếm số</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="demDuong()">Đếm số dương</button>
+    <div class=" bg-success" id="demDuong"></div>
+  </div>
+  <br>
+  <!-- Bài 3: Tìm số nhỏ nhất -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 3: Tìm số nhỏ nhất</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="min()">Tìm số nhỏ nhất</button>
+    <div class=" bg-success" id="min"></div>
+  </div>
+  <br>
+  <!-- Bài 4: Tìm số dương nhỏ nhất -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 4: Tìm số dương nhỏ nhất</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="minDuong()">Tìm số dương nhỏ nhất</button>
+    <div class=" bg-success" id="minDuong"></div>
+  </div>
+  <br>
+  <!-- Bài 5: Tìm số chẵn cuối cùng trong mảng -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 5: Tìm số chẵn cuối cùng trong mảng</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="lastChan()">Tìm số chẵn cuối cùng trong mảng</button>
+    <div class=" bg-success" id="lastChan"></div>
+  </div>
+  <br>
+  <!-- Bài 6: Đổi chổ -->
+  <h1 class=" text-center  text-white bg-primary">Bài 6: Đổi Chổ</h1>
+  <div class=" form-group form-group text-center text-white row">
+    <input type="number" class="form-control col-4" name="" id="viTri1" aria-describedby="helpId"
+      placeholder="Nhập số vị trí 1">
+    <input type="number" class="form-control col-4" name="" id="viTri2" aria-describedby="helpId"
+      placeholder="Nhập số vị trí 2">
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="doiCho()">Đổi chổ</button>
+    <br>
+    <div class="col-12 bg-success " id="doiCho"></div>
+  </div>
+  <br>
+  <!-- Bài 7 -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 7: Sắp xếp tăng dần</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="sapXep()">Sắp xếp</button>
+    <br>
+    <div class=" bg-success" id="sapXep"></div>
+  </div>
+  <br>
+  <!-- Bài 8: Tìm số nguyên tố đầu tiên -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 8: Tìm số nguyên tố đầu tiên</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="NTDauTien()">Số nguyên tố đầu tiên</button>
+    <br>
+    <div class=" bg-success" id="NTDauTien"></div>
+  </div>
+  <br>
+  <br>
+  <!-- Bài 9: Đếm số Nguyên -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 9: Đếm số Nguyên</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="demSoNguyen()">Đếm số Nguyên</button>
+    <br>
+    <div class=" bg-success" id="demSoNguyen"></div>
+  </div>
+  <br>
+  <!-- Bài 10: So sánh số âm và số dương -->
+  <div class="form-group text-center  text-white">
+    <h1 class="bg-primary">Bài 10: So sánh số âm và số dương</h1>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+      onclick="soSanh()">So sánh</button>
+    <br>
+    <div class=" bg-success" id="soSanh"></div>
+  </div>
+  <br>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
