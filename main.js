@@ -86,14 +86,15 @@ function NTDauTien() {
     if (mangN[i] < 2) {
       isSoNT = false;
     }
-    for (let j = 2; j < mangN[i]; j++) {
-      if (mangN[i] % j === 0) {
+    for (let j = 2; j <= mangN[i] / 2; j++) {
+      if (Math.sqrt(mangN[i]) % j === 0) {
         isSoNT = false;
         break;
       }
     }
     if (isSoNT == true) {
-      result = mangN[i];
+      result += mangN[i];
+      break;
     }
   }
   document.getElementById("NTDauTien").innerHTML =
